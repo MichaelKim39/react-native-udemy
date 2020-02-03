@@ -58,6 +58,10 @@ const HomeScreen = ({navigation}) => {
         onPress={() => navigation.navigate('Text')}
         title="Text Demo"
       />
+      <Button
+        onPress={() => navigation.navigate('Text')}
+        title="Text Demo 2"
+      />
 
 
       {/* Touchable Opacity has no default styling */}
