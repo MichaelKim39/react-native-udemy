@@ -1,4 +1,5 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen';
 // import custom components here (Don't need file ending)
 import ComponentsScreen from './src/screens/ComponentsScreen';
@@ -14,6 +15,8 @@ import SquareReducer from './src/screens/SquareReducer';
 import ReducerConvention from './src/screens/ReducerConvention';
 import ReducerExercise from './src/screens/ReducerExercise';
 import TextScreen from './src/screens/TextScreen';
+import BoxScreen from './src/screens/BoxScreen';
+import LayoutPractice from './src/screens/LayoutPractice';
 
 // Stack navigator decides what to show on screen 
 // Add custom components to options for stack navigator to display
@@ -33,6 +36,8 @@ const navigator = createStackNavigator(
     Convention: ReducerConvention,
     Ex2: ReducerExercise,
     Text: TextScreen,
+    Box: BoxScreen,
+    Layout: LayoutPractice,
   },
   {
     initialRouteName: 'Home',
